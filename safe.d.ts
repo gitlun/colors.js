@@ -21,6 +21,10 @@ export interface Color {
     grey: Color;
 
     brightBlue: Color;
+    brightYellow: Color;
+    brightCyan: Color;
+    brightGreen: Color;
+    brightRed: Color;
 
     bgBlack: Color;
     bgRed: Color;
@@ -72,6 +76,10 @@ export const gray: Color;
 export const grey: Color;
 
 export const brightBlue: Color;
+export const brightYellow: Color;
+export const brightCyan: Color;
+export const brightGreen: Color;
+export const brightRed: Color;
 
 export const bgBlack: Color;
 export const bgRed: Color;
@@ -100,48 +108,3 @@ export const america: Color;
 export const trap: Color;
 export const random: Color;
 export const zalgo: Color;
-
-declare global {
-    interface String {
-        strip: string;
-        stripColors: string;
-
-        black: string;
-        red: string;
-        green: string;
-        yellow: string;
-        blue: string;
-        magenta: string;
-        cyan: string;
-        white: string;
-        gray: string;
-        grey: string;
-
-        bgBlack: string;
-        bgRed: string;
-        bgGreen: string;
-        bgYellow: string;
-        bgBlue: string;
-        bgMagenta: string;
-        bgCyan: string;
-        bgWhite: string;
-        bgGrey: string;
-
-        reset: string;
-        // @ts-ignore
-        bold: string;
-        dim: string;
-        italic: string;
-        underline: string;
-        inverse: string;
-        hidden: string;
-        strikethrough: string;
-
-        rainbow: string;
-        zebra: string;
-        america: string;
-        trap: string;
-        random: string;
-        zalgo: string;
-    }
-}
